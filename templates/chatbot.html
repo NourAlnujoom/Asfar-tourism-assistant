@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Asfar Tourism Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Asfar</a>
+            <ul class="nav-links">
+                <li><a href="/#general-info">General Information</a></li>
+                <li><a href="/chatbot">Chatbot</a></li>
+                <li><a href="/audio-guide">Audio Guide</a></li>
+                <li><a href="/help">Help Center</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Chatbot Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <h2 class="section-title">Your Jordan Travel Assistant</h2>
+            
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>Chat with Asfar</h3>
+                    <p>Ask me about trip planning, weather, crowds, or hidden gems!</p>
+                </div>
+                
+                <div class="chat-messages">
+                    <!-- Messages will be added here by JavaScript -->
+                </div>
+                
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message here..." maxlength="500">
+                    <button type="button">Send</button>
+                </div>
+            </div>
+            
+            <!-- Quick Tips -->
+            <div style="margin-top: 2rem; text-align: center;">
+                <h3 style="color: #6b4f27; margin-bottom: 1rem;">Quick Tips</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <div class="card" style="padding: 1rem;">
+                        <h4>Trip Planning</h4>
+                        <p>Try: "Plan a 5-day trip to Jordan" or "What should I see in Petra?"</p>
+                    </div>
+                    <div class="card" style="padding: 1rem;">
+                        <h4>Weather & Crowds</h4>
+                        <p>Try: "What's the weather like in Jordan?" or "When is Petra least crowded?"</p>
+                    </div>
+                    <div class="card" style="padding: 1rem;">
+                        <h4>Hidden Gems</h4>
+                        <p>Try: "Show me hidden gems" or "What do locals recommend?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #6b4f27; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem;">
+        <div class="container">
+            <p>&copy; 2024 Asfar - Jordan Tourism Assistant. Made with love for travelers exploring Jordan.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html> 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asfar - Your Jordan Tourism Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Asfar</a>
+            <ul class="nav-links">
+                <li><a href="#general-info">General Information</a></li>
+                <li><a href="/chatbot">Chatbot</a></li>
+                <li><a href="/audio-guide">Audio Guide</a></li>
+                <li><a href="/help">Help Center</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Asfar</h1>
+            <p>Your Personal Jordan Tourism Assistant</p>
+            <a href="/chatbot" class="btn">Let's Plan Your Trip!</a>
+        </div>
+    </section>
+
+    <!-- General Information Section -->
+    <section id="general-info" class="section">
+        <div class="container">
+            <h2 class="section-title">Welcome to Jordan</h2>
+            
+            <div class="card">
+                <h3>About Asfar</h3>
+                <p>Asfar is your comprehensive tourism assistant designed specifically for visitors to Jordan. Whether you're planning your first trip or returning to explore more of this beautiful country, we're here to make your journey seamless and unforgettable.</p>
+            </div>
+
+            <div class="card">
+                <h3>What Our Chatbot Can Do</h3>
+                <p>Our intelligent chatbot is equipped with extensive knowledge about Jordan and can assist you with:</p>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li><strong>Trip Planning:</strong> Get personalized itineraries based on your interests and time constraints</li>
+                    <li><strong>Weather & Crowd Information:</strong> Check current weather conditions and crowd levels at popular destinations</li>
+                    <li><strong>Hidden Gems:</strong> Discover lesser-known attractions and local favorites</li>
+                    <li><strong>Practical Tips:</strong> Get advice on transportation, accommodation, and cultural etiquette</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Why Choose Jordan?</h3>
+                <p>Jordan is a land of ancient wonders and modern hospitality. From the iconic rock-carved city of Petra to the therapeutic waters of the Dead Sea, from the vast deserts of Wadi Rum to the bustling streets of Amman, Jordan offers experiences that will stay with you forever.</p>
+                <p>Our country is known for its warm hospitality, rich history, and diverse landscapes. Whether you're interested in archaeology, adventure, relaxation, or cultural immersion, Jordan has something special for every traveler.</p>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Ready to Start Your Adventure?</h3>
+                <p>Click the button below to begin planning your perfect Jordan experience with our AI assistant.</p>
+                <a href="/chatbot" class="btn" style="margin-top: 1rem;">Start Planning Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Explore Jordan</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="card">
+                    <h3>Petra</h3>
+                    <p>The ancient Nabatean city carved into rose-red sandstone cliffs. A UNESCO World Heritage site and one of the New Seven Wonders of the World.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Wadi Rum</h3>
+                    <p>Experience the vast desert landscapes that have inspired travelers for centuries. Perfect for stargazing and desert adventures.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Dead Sea</h3>
+                    <p>The lowest point on Earth, famous for its therapeutic mud and the unique experience of floating in its mineral-rich waters.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Jerash</h3>
+                    <p>One of the best-preserved Roman cities outside of Italy, featuring impressive colonnaded streets and ancient theaters.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Amman</h3>
+                    <p>Jordan's vibrant capital city, where ancient history meets modern culture. Explore the Citadel, Roman Theater, and bustling souks.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Audio Guide</h3>
+                    <p>Listen to detailed audio guides about Jordan's most important sites. Perfect for learning while you travel or preparing for your visit.</p>
+                    <a href="/audio-guide" class="btn" style="margin-top: 1rem;">Listen Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #e9dec7; color: #6b4f27; text-align: center; padding: 2rem 0; margin-top: 3rem;">
+        <div class="container">
+            <p>&copy; 2024 Asfar - Jordan Tourism Assistant. Made for travelers exploring Jordan.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html> 

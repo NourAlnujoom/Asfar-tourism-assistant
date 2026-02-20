@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Guide - Asfar Tourism Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Asfar</a>
+            <ul class="nav-links">
+                <li><a href="/#general-info">General Information</a></li>
+                <li><a href="/chatbot">Chatbot</a></li>
+                <li><a href="/audio-guide">Audio Guide</a></li>
+                <li><a href="/help">Help Center</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Audio Guide Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <h2 class="section-title">Jordan Audio Guide</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: #666;">
+                Listen to detailed audio guides about Jordan's most important historical and cultural sites. 
+                Perfect for learning while you travel or preparing for your visit.
+            </p>
+            
+            <div class="audio-grid">
+                <!-- Petra -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Petra">
+                    <div class="audio-content">
+                        <h3>Petra - The Rose City</h3>
+                        <p>Discover the ancient Nabatean city carved into rose-red sandstone cliffs. Learn about the Treasury, Monastery, and the fascinating history of this UNESCO World Heritage site.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 8:45</p>
+                    </div>
+                </div>
+
+                <!-- Wadi Rum -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wadi Rum">
+                    <div class="audio-content">
+                        <h3>Wadi Rum - Valley of the Moon</h3>
+                        <p>Explore the vast desert landscapes that have inspired travelers for centuries. Learn about Bedouin culture, stargazing, and desert adventures in this stunning natural wonder.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 6:32</p>
+                    </div>
+                </div>
+
+                <!-- Dead Sea -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dead Sea">
+                    <div class="audio-content">
+                        <h3>Dead Sea - The Lowest Point on Earth</h3>
+                        <p>Experience the therapeutic waters and mineral-rich mud of the Dead Sea. Learn about its unique properties, health benefits, and the best ways to enjoy this natural wonder.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 7:18</p>
+                    </div>
+                </div>
+
+                <!-- Jerash -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Jerash">
+                    <div class="audio-content">
+                        <h3>Jerash - The Pompeii of the East</h3>
+                        <p>Walk through one of the best-preserved Roman cities outside of Italy. Discover the impressive colonnaded streets, ancient theaters, and temples that tell the story of Roman Jordan.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 9:12</p>
+                    </div>
+                </div>
+
+                <!-- Amman Citadel -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Amman Citadel">
+                    <div class="audio-content">
+                        <h3>Amman Citadel - Heart of the Capital</h3>
+                        <p>Explore the ancient citadel that overlooks modern Amman. Learn about the city's rich history from the Bronze Age through the Islamic period, and enjoy panoramic views of the capital.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 5:45</p>
+                    </div>
+                </div>
+
+                <!-- Mount Nebo -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mount Nebo">
+                    <div class="audio-content">
+                        <h3>Mount Nebo - Biblical Significance</h3>
+                        <p>Visit the mountain where Moses is said to have seen the Promised Land. Learn about its biblical importance and enjoy breathtaking views of the Dead Sea and Jordan Valley.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 4:28</p>
+                    </div>
+                </div>
+
+                <!-- Madaba -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Madaba">
+                    <div class="audio-content">
+                        <h3>Madaba - City of Mosaics</h3>
+                        <p>Discover the famous Byzantine mosaics, including the 6th-century map of the Holy Land. Learn about the city's Christian heritage and its importance in early cartography.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 6:15</p>
+                    </div>
+                </div>
+
+                <!-- Karak Castle -->
+                <div class="audio-card">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Karak Castle">
+                    <div class="audio-content">
+                        <h3>Karak Castle - Crusader Fortress</h3>
+                        <p>Explore the impressive Crusader castle that once controlled the vital trade routes. Learn about the castle's strategic importance and the battles that shaped its history.</p>
+                        <audio class="audio-player" controls>
+                            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p style="font-size: 0.9rem; color: #888; margin-top: 0.5rem;">Duration: 7:52</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Section -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <div class="card">
+                    <h3>Download Audio Guides</h3>
+                    <p>Download all audio guides for offline listening during your travels.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Download All Guides</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #6b4f27; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem;">
+        <div class="container">
+            <p>&copy; 2024 Asfar - Jordan Tourism Assistant. Made with love for travelers exploring Jordan.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html> 
